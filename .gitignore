@@ -1,3 +1,9 @@
+#Custom
+*.cbp
+*.depend
+*.layout
+
+
 # Prerequisites
 *.d
 
