@@ -1,0 +1,55 @@
+Nisan 2020
+PROGRAMLAMA II DERSÝ
+2. PROJE
+
+Bu projede karakter tabanlý LZ77, DEFLATE sýkýþtýrma algoritmalarý kullanýlarak dosya sýkýþtýrma uygulamasý yapmanýz istenmektedir.  Proje için C / C++ programlama dili kullanýlacaktýr.
+Projede istenenler sýrasýyla aþaðýda verilmektedir. 
+
+    • Girdi olarak kullanýlacak sýkýþtýrýlmamýþ dosya, metin dosyasý (metin.txt) þeklinde olacaktýr. 
+    • Sýkýþtýrýlacak dosyadaki her bir karakter okunacaktýr.
+    • En son her bir sýkýþtýrma algoritmasý için çýktý dosyasý (metin dosyasýnýn sýkýþtýrýlmýþ hali) oluþturulacaktýr. 
+    • Kullandýðýnýz sýkýþtýrma algoritmalarýnýn performanslarý birbiri ile karþýlaþtýrýlacaktýr.
+
+
+LZ77 Sýkýþtýrma Algoritmasý
+Genellikle hazýrlanan metin belgelerinde, kendini tekrar eden kýsýmlar bulunmaktadýr. Özellikle;
+    • baðlaç ve zamirler,
+    • diðer kelimelerin baþýna ve sonuna gelen ekler,
+ metinlerin içinde sýk sýk tekrar edilmektedirler. 
+LZ77 algoritmasýnýn amacý, metin belgelerindeki tekrar eden bölümleri ortadan kaldýrmak ve buna yönelik metin belgesini sýkýþtýrmaktýr. 
+LZ77 yaklaþýmýnda sözlük, daha önce kodlanmýþ serinin bir parçasýdýr. Algoritmadaki arama tamponunun büyüklüðü, daha önce kodlanmýþ serinin ne büyüklükte bir parçasýnda arama yapýlacaðýný belirler. Arama tamponu büyütüldükçe, sýkýþtýrma oraný artar, fakat ayný zamanda sýkýþtýrma zamaný da artar. 
+
+
+Örnek: “abracadabra” kelimesini LZ77 algoritmasý ile sýkýþtýrma.
+
+a
+b
+r
+a
+c
+a
+d
+a
+b
+r
+a
+a
+a
+a
+
+
+
+Ýleri tamponun ilk karakteri olan a, arama tamponunda sondan baþa doðru aranýr. Ýkinci karþýlaþtýrmada benzerlik bulunur, fakat bu karakterden sonra b karakteri deðil de d karakteri yer aldýðý için benzerlik uzunluðu sadece 1’dir. Arama devam ettirilir. Ýki karakter sonra bir a daha bulunur, sonrasýnda c yer aldýðý için bunun da benzerlik uzunluðu 1’dir. Aramaya devam edilir. Arama tamponunun baþýnda, yani ileri tamponda aranan karakterden 7 uzaklýkta (offset=7) bir a daha bulunur. Bu defa benzerlik uzunluðu 4’tür (abra). 
+Ýleri tamponda“abra” serisinden sonra yer alan a karakteri ile birlikte [7,4,C(a)] þeklinde üçlü olarak kodlanýr. Ýleri tamponun en sonundaki a karakteri ise [0,0,C(a)] þeklinde kodlanýr.
+DEFLATE Sýkýþtýrma Algoritmasý
+Deflate Sýkýþtýrma Algoritmasý kayýpsýz veri sýkýþtýrma formatýdýr. Huffman Kodlamasý ve LZSS algoritmasýnýn bir bileþiminden oluþmaktadýr.
+Sýkýþtýrýlacak olan veri birbirini takip eden bloklar kümesi olarak düþünülmektedir ve her blok LZSS algoritmasý ve Huffman kodlamasýnýn birlikte kullanýlmasý ile sýkýþtýrýlmaktadýr. Her blok için oluþturulan Huffman aðacý bir önceki ve bir sonraki bloktan baðýmsýzdýr. Sýkýþtýrýlabilen bloklarýn büyüklüðü deðiþken olabilmektedir. 
+Deflate algoritmasýnda eðer Huffman aðacýnýn kodlama yapamayacak kadar büyümesi durumu oluþursa, yeni bir Huffman aðacý oluþturmak için o bloðu sonlandýrarak yeni bir blok baþlatmaktadýr. 
+Her blok, sýkýþtýrýlmýþ verilerin bulunduðu kýsým ve bu verileri temsil eden Huffman kod aðaçlarýnýn saklandýðý kýsým olmak üzere iki kýsýmdan oluþur. Kullanýlan Huffman aðaçlarý her bloðun baþýnda sýkýþtýrýlmýþ veriden önce yer alýr, ve bu aðaçlar da Huffman kodlamasý kullanýlarak sýkýþtýrýlýr.
+     Son Teslim Tarihi : Mayýs 2020 
+
+Proje ile ilgili Arþ. Gör Burcu KIR SAVAÞ ve Arþ. Gör. Dilara GÖRMEZ ile irtibata geçebilirsiniz. 
+
+Proje ile ilgili sorularýnýz sadece e-destek sisteminde bulunan forumdan alýnacaktýr.
+
+     Sunumlarýn ne þekilde alýnacaðý daha sonra duyurulara atýlacaktýr.

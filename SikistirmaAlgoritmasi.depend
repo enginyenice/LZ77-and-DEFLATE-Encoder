@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1586207716 source:c:\users\engin\desktop\sikistirmaalgoritmasi\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
