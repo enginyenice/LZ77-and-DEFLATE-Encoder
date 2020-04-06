@@ -2,7 +2,9 @@
 *.cbp
 *.depend
 *.layout
-
+SikistirmaAlgoritmasi.cbp
+SikistirmaAlgoritmasi.depend
+SikistirmaAlgoritmasi.layout
 
 # Prerequisites
 *.d
