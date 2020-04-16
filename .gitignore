@@ -1,7 +1,10 @@
-#Custom
+# Custom
 *.cbp
 *.depend
 *.layout
+*.cbp*
+*.depend*
+*.layout*
 SikistirmaAlgoritmasi.cbp
 SikistirmaAlgoritmasi.depend
 SikistirmaAlgoritmasi.layout
