@@ -5,17 +5,17 @@
 ### Proje - II Sıkıştırma Algoritmaları
 
 ----------------------------------------------
-Proje Detayları: [Proje Detayları (PDF)](https://github.com/nginY26/Gezgin-Kargo-Problemi/blob/master/D%C3%B6k%C3%BCmanlar/Proje.pdf "Proje Detayları (PDF)")
+Proje Detayları: [Proje Detayları (PDF)](https://github.com/nginY26/SikistirmaAlgoritmasi/blob/master/D%C3%B6k%C3%BCman/Proje.pdf "Proje Detayları (PDF)")
 
 ------------
 
 
-Rapor Linki: [Teslim Raporu (PDF)](https://github.com/nginY26/Gezgin-Kargo-Problemi/blob/master/D%C3%B6k%C3%BCmanlar/Rapor.pdf "Teslim Raporu (PDF)")
+Rapor Linki: [Teslim Raporu (PDF)](https://github.com/nginY26/SikistirmaAlgoritmasi/blob/master/D%C3%B6k%C3%BCman/Rapor.pdf "Teslim Raporu (PDF)")
 
 ------------
 
 
-Resimler Linki: [Proje Resimleri](https://github.com/nginY26/Gezgin-Kargo-Problemi/tree/master/D%C3%B6k%C3%BCmanlar/Resimler "Proje Resimleri")
+Resimler Linki: [Proje Resimleri](https://github.com/nginY26/SikistirmaAlgoritmasi/tree/master/D%C3%B6k%C3%BCman/Resimler "Proje Resimleri")
 
 
 ----------------------------------------------
